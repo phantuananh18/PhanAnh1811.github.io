@@ -1,0 +1,152 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* chỉnh sửa header */
+.header{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: white;
+    box-shadow: 3px 3px 5px black;
+}
+.img-logo{
+    margin-top: 5px;
+}
+.menu{
+    margin-top: 10px;
+    padding-left: 3rem;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    font-size: 1rem;
+    padding: 0.75rem 0rem;
+}
+.menu ul li{
+    height: 40px;
+    width: 130px;
+    line-height: 40px;
+    z-index: 9999;
+}
+.sub-menu{
+    width: 130px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.menu ul li a:hover{
+    text-decoration: underline;
+}
+.menu ul li  > .sub-menu{
+    display: none;
+}
+
+.menu ul li:hover .sub-menu{
+    display: block;
+}
+.search-box{
+    position: relative;
+    right: 2rem;
+    margin-top: 35px;
+}
+.search-txt{
+    border: 0px;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+.signin{
+    background-color: #1c1211;
+    color: white;
+    position: absolute;
+    right: 0%;
+    padding: 33.5px 20px;
+}
+.signin a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+.signin a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+/* Chỉnh sửa nội dung container */
+.center{
+    padding: 10rem;
+}
+/* chỉnh sửa nội dung footer */
+.footer{
+    
+}
+.grid-content{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    justify-content: center;
+    background: #110b0b;
+    color: white;
+}
+.content{
+    margin: 30px 50px;
+}
+.content li{
+    list-style: none;
+}
+.content h3{
+    padding-bottom: 10px;
+    padding-top: 30px;
+    border-bottom: .5px solid white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.location{
+    margin: 0 0 10px 40px;
+}
+.news li{
+    padding-bottom: 15px;
+}
+.footer button{
+    border:0;
+    background: gray;
+    padding:4px 15px;
+    color: black;
+    font-size: 19px;
+    
+}
+.copyright{
+    background: #110b0b;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+.container-email{
+    position: relative;
+}
+.email{
+    width: 250px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    border: 0px;
+}
+.button-primary{
+    right: 22.8%;
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    border: 0px;
+}
+
+
+
