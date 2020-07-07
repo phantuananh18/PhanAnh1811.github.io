@@ -183,10 +183,15 @@ h3{
 
 /* Chỉnh sửa nội dung container-customer */
 .container-customer{
-    margin: 800px 200px 0 120px;
+    background-color: #f3f3f3;
+}
+.grid-container-customer{
+    margin: 108px 200px 0 90px;
+    padding-top: 200px;
     display: grid;
     grid-template-rows: 1;
-    grid-template-columns: repeat(3,33.33%);
+    grid-template-columns: repeat(3,35%);
+
 }
 .chamsoc-item{
     display:flex;
@@ -194,29 +199,33 @@ h3{
     justify-content: center;
     align-items: center;
 }
-.container-customer h3{
+
+.container-customer h2 a{
     color:#222222;
-    font-size:30px;
     text-align: center;
+    text-decoration: none;
 }
-/*
+
 .chamsoc-item button{
-    width:15rem;
-    height:2.5rem;
-    align-self: center;
-    margin-top: 25px;
-    border: 0;
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    border: 1px solid #110b0b;
     border-radius: 20px;
-    border-color: black;
 }
-*/
+
 .chamsoc-item p{
     color: #525252;
     text-align:center;
+    font-size: 15px;
+}
+.chamsoc-item h2{
+    color: #222222;
+    font-size: 20px;
 }
 /* chỉnh sửa nội dung footer */
 .footer{
-    margin-top:50px;
+    margin-top:35px;
 }
 .grid-content{
     display: grid;
