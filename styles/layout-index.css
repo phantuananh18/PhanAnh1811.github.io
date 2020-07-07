@@ -62,7 +62,7 @@ h3{
 .sub-menu{
     width: 130px;
 }
-.menu li a{
+.menu ul li a{
     text-decoration: none;
     color: black;
     font-family: 'Oswald', sans-serif;
@@ -70,7 +70,7 @@ h3{
 .menu ul li a:hover{
     text-decoration: underline;
 }
-.menu ul li   .sub-menu{
+.menu ul li   >.sub-menu{
     display: none;
 }
 
