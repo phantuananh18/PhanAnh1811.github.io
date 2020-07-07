@@ -7,6 +7,25 @@ a{
     text-decoration: none;
 }
 
+p{
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 0;
+    color: #c2c2c2;
+    margin:0 auto;
+    max-width: 970px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h3{
+    color: #efefef;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 /* chỉnh sửa header */
 .header{
     display: flex;
@@ -18,11 +37,12 @@ a{
     box-shadow: 3px 3px 5px black;
 }
 .img-logo{
-    margin-top: 5px;
+    margin-top: 8px;
+    padding-right: 12rem;
 }
 .menu{
     margin-top: 10px;
-    padding-left: 3rem;
+    padding-right: 90px;
 }
 .menu ul{
     display: flex;
@@ -31,7 +51,7 @@ a{
     text-align: center;
     background-color: white;
     font-size: 1rem;
-    padding: 0.75rem 0rem;
+    padding: 0.77rem 0rem;
 }
 .menu ul li{
     height: 40px;
@@ -50,7 +70,7 @@ a{
 .menu ul li a:hover{
     text-decoration: underline;
 }
-.menu ul li  > .sub-menu{
+.menu ul li   .sub-menu{
     display: none;
 }
 
@@ -60,13 +80,14 @@ a{
 .search-box{
     position: relative;
     right: 2rem;
-    margin-top: 35px;
+    margin-top: 28px;
 }
 .search-txt{
     border: 0px;
     border-bottom: 1px solid black;
     outline: none;
 }
+
 .signin{
     background-color: #1c1211;
     color: white;
@@ -84,7 +105,7 @@ a{
     color: white;
 }
 
-/* Chỉnh sửa nội dung container */
+/* Chỉnh sửa nội dung container slideshows */
 .container-slidershow{
     padding-top: 2rem;
 }
@@ -101,22 +122,105 @@ a{
      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-.container-dichvu{
-    background-color: #3d3d3d;
+/* Chỉnh sửa container dịch vụ */
+.container-service{
+    background-color: #000000;
 }
 
-p{
-    margin: 0 auto;
-    font-weight: normal;
-    font-size: 17px;
-    margin-bottom: 0;
+.grid-container-servie{
+    display: grid;
+    grid-template-columns: repeat(4,500px);
+    grid-template-rows: 1;
     
 }
+.grid-service{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:30px;
+    padding:20px
+}
+.service-detail {
+    display:flex;
+    flex-direction: column;
+}
+.service-detail button{
+    width:15rem;
+    height:2.5rem;
+    align-self: center;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 20px;
+}
+.container-service{
+    margin-top:-30px;
+    padding-top:50px
+}
 
+/* Chỉnh sửa nội dung container-album */
+.container-album{
+    width:auto;
+    height:25rem;
+    background-color: #000000;
+    padding:30px;
+    margin-top:-30px;
+    padding-bottom:50px;
+}
+.center-handler{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.center-handler button{
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    border: 0;
+    border-radius: 20px;
+}
+
+/* Chỉnh sửa nội dung container-customer */
+.container-customer{
+    margin: 800px 200px 0 120px;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: repeat(3,33.33%);
+}
+.chamsoc-item{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-customer h3{
+    color:#222222;
+    font-size:30px;
+    text-align: center;
+}
+/*
+.chamsoc-item button{
+    width:15rem;
+    height:2.5rem;
+    align-self: center;
+    margin-top: 25px;
+    border: 0;
+    border-radius: 20px;
+    border-color: black;
+}
+*/
+.chamsoc-item p{
+    color: #525252;
+    text-align:center;
+}
 /* chỉnh sửa nội dung footer */
+.footer{
+    margin-top:50px;
+}
 .grid-content{
     display: grid;
-    grid-template-columns: repeat(3, 500px);
+    grid-template-columns: repeat(3, 650px);
     justify-content: center;
     background: #110b0b;
     color: white;
@@ -124,15 +228,20 @@ p{
 .content{
     margin: 30px 50px;
 }
+.content ul{
+    position: relative;
+    right:40px;
+}
 .content li{
     list-style: none;
 }
 .content h3{
     padding-bottom: 10px;
-    padding-top: 30px;
+    padding-top: 25px;
     border-bottom: .5px solid white;
     font-size: 20px;
     font-weight: bold;
+    text-align: left;
 }
 .location{
     margin: 0 0 10px 40px;
@@ -143,10 +252,11 @@ p{
 .footer button{
     border:0;
     background: gray;
-    padding:4px 15px;
+    padding:1.7px 15px;
     color: black;
-    font-size: 19px;
-    
+    font-size: 22px;
+    font-weight: 500;
+    border: 0;   
 }
 .copyright{
     background: #110b0b;
@@ -158,16 +268,16 @@ p{
     position: relative;
 }
 .email{
-    width: 250px;
+    width: 490px;
     height: 36px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px 0 0 10px;
     border: 0px;
+    outline: none;
 }
 .button-primary{
-    right: 22.8%;
+    right: 0%;
     position: absolute;
-    border-radius: 0 5px 5px 0;
-    border: 0px;
+    border-radius: 0 10px 10px 0;
 }
 
 
