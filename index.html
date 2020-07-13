@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr Phủi</title>
-    <link rel="stylesheet" href="styles/layout-index.css">
+    <link rel="stylesheet" href="styles/index-layout.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     
@@ -26,11 +27,9 @@
     </style>
 </head>
 <body>
-
     <!-- Header -->
     <div class="header">
         <a href="index.html" title="Mr Phủi"><img class="img-logo" src="images/banner/logo.png" alt=""></a>
-
         <div class="menu">
             <ul>
                 <li><a href="Dichvu.html" title="Dịch vụ">DỊCH VỤ</a>
@@ -38,34 +37,30 @@
                         <li><a href="Dichvu-vesinh.html">Dịch vụ vệ sinh</a></li>
                         <li><a href="Dichvuthem.html">Dịch vụ thêm</a></li>
                     </ul>
-                </li>
+                </li>           
                 <li><a href="Chinhsach.html" title="Chính sách">CHÍNH SÁCH</a></li>
-                <li><a href="Blog.html" title="Blog">BLOG</a></li>
-                <li><a href="Chuongtrinh.html" title="Chương trình">CHƯƠNG TRÌNH</a></li>
-                   <!--
+                <li><a href="Blog.html" title="Blog">BLOG</a></li>            
+                <li><a href="Chuongtrinh.html" title="Chương trình">CHƯƠNG TRÌNH</a>
                     <ul class="sub-menu">
                         <li><a href="Uudai.html">Chương trình ưu đãi</a></li>
                         <li><a href="Quatang.html">Quà tặng</a></li>
                     </ul>
-                   --> 
-                <li><a href="Vechungtoi.html" title="Về chúng tôi">VỀ CHÚNG TÔI</a></li>
-                   <!--
+                </li>           
+                <li><a href="Vechungtoi.html" title="Về chúng tôi">VỀ CHÚNG TÔI</a>
                     <ul class="sub-menu">
-                        <li><a href="KhachHang.html">Đối tác và khách hàng</li>
+                        <li><a href="KhachHang.html">Đối tác và khách hàng</a></li>
                     </ul>
-                   -->
-                    
+                </li>             
                 <li><a href="Lienhe.html" title="Liên hệ">LIÊN HỆ</a></li>
             </ul>
         </div>
         <div class="search-box">
             <input class="search-txt" type="text" name="" placeholder="Tìm dịch vụ">
-            <a class="search-btn" href="Timkiem.html
-            ">
+            <a class="search-btn" href="Timkiem.html">
                 <i class="fas fa-search"></i>
             </a>
         </div> 
-        <div class="signin"><a href="#" title="Sign in">SIGN IN</a></div>
+        <div class="signin"><a href="login.html" title="Sign in">SIGN IN</a></div>
     </div>
     
     <!-- Slider shows -->
@@ -73,9 +68,9 @@
         <div id="demo" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ul class="carousel-indicators">
-              <li data-target="#demo" data-slide-to="0" class="active"></li>
-              <li data-target="#demo" data-slide-to="1"></li>
-              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="0" style="background-color: #000000;" class="active"></li>
+              <li data-target="#demo" data-slide-to="1" style="background-color: #000000;"></li>
+              <li data-target="#demo" data-slide-to="2" style="background-color: #000000;"></li>
             </ul>
             
             <!-- The slideshow -->
@@ -149,7 +144,7 @@
         </div>
     </div>
 
-    <!-- Dịch vụ thêm -->
+    <!-- Dịch vụ vệ sinh thêm dùng lại class của dịch vụ vệ sinh -->
     <div class="container-service">
         <h3>DỊCH VỤ THÊM</h3>
         <p>
@@ -186,7 +181,7 @@
                 Là ứng dụng cung cấp vệ sinh giày dép, quần áo cao cấp theo nhu cầu đầu tiên ở Vietnam, 
                 được thành lập với sứ mệnh giải phóng mọi người khỏi gánh nặng giặt ủi & công việc gia đình.
             </p>
-            <button>XEM TẤT CẢ</button>
+            <a href="thuVienAnh.html"><button>XEM TẤT CẢ</button></a>
         </div>
         <div style="margin-bottom: 50px;background-color: #000000;" class="owl-carousel owl-theme">
             <div class="item"><img src="./images/product/before1.png" alt="" srcset=""></div>
@@ -213,6 +208,13 @@
 
     <!-- Chăm sóc khách hàng -->
     <div class="container-customer">
+        <div class="center-handler-customer">
+            <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+            <p>
+                Là ứng dụng cung cấp vệ sinh giày dép, quần áo cao cấp theo nhu cầu đầu tiên ở Vietnam,
+                 được thành lập với sứ mệnh giải phóng mọi người khỏi gánh nặng giặt ủi & công việc gia đình.
+            </p>
+        </div>
         
         <div class="grid-container-customer">     
             <div class="chamsoc-item">
@@ -235,12 +237,12 @@
                 <img src="./images/logo/loi-khuyen-tu-cac-chuyen-gia.png" alt="">
                 <h2><a href="#">LỜI KHUYÊN CỦA CHUYÊN GIA</a></h2>
                 <p>
-                    Một số tips nhỏ cho việc bảo quản giày từ các chuyên gia kinh nghiệm
+                    Một số tips nhỏ cho việc bảo quản giày từ các chuyên gia kinh nghiệm.
                 </p>
                 <button>XEM CHI TIẾT</button>
             </div>
         </div>
-        <div style="margin: 0px 200px 0 90px;padding-top: 50px; padding-bottom: 10px ;" class="grid-container-customer">
+        <div style="padding-top: 2rem;" class="grid-container-customer">
             <div class="chamsoc-item">
                 <img src="./images/logo/cham-soc-khach-hang.png" alt="">
                 <h2><a href="#">CHĂM SÓC KHÁCH HÀNG</a></h2>

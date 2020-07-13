@@ -7,25 +7,6 @@ a{
     text-decoration: none;
 }
 
-p{
-    margin: 0 auto;
-    font-weight: normal;
-    font-size: 17px;
-    margin-bottom: 0;
-    color: #c2c2c2;
-    margin:0 auto;
-    max-width: 970px;
-    text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
-}
-
-h3{
-    color: #efefef;
-    font-size: 40px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 /* chỉnh sửa header */
 .header{
     display: flex;
@@ -38,7 +19,7 @@ h3{
 }
 .img-logo{
     margin-top: 8px;
-    padding-right: 12rem;
+    padding-right: 1rem;
 }
 .menu{
     margin-top: 10px;
@@ -79,7 +60,7 @@ h3{
 }
 .search-box{
     position: relative;
-    right: 2rem;
+    right: 6.5rem;
     margin-top: 28px;
 }
 .search-txt{
@@ -89,7 +70,7 @@ h3{
 }
 
 .signin{
-    background-color: #1c1211;
+    background-color: black;
     color: white;
     position: absolute;
     right: 0%;
@@ -126,23 +107,41 @@ h3{
 .container-service{
     background-color: #000000;
 }
+.container-service >p{
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    color: #c2c2c2;
+    max-width: 970px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container-service >h3{
+    margin: 20px;
+    font-weight: 700;
+    color: #efefef;
+    font-size: 40px;
+    text-align: center;
+}
 
 .grid-container-servie{
     display: grid;
     grid-template-columns: repeat(4,500px);
     grid-template-rows: 1;
-    
 }
 .grid-service{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    margin:30px;
-    padding:20px
+    padding: 0;
 }
 .service-detail {
     display:flex;
     flex-direction: column;
+    margin-bottom: 3rem;
+    padding:20px;
 }
 .service-detail button{
     width:15rem;
@@ -154,17 +153,43 @@ h3{
 }
 .container-service{
     margin-top:-30px;
-    padding-top:50px
+    padding-top:50px;
 }
 
-/* Chỉnh sửa nội dung container-album */
+.service-detail > a > img {
+    width:250px;
+    height:200px;
+}
+
+.service-detail > button:hover{
+   background-color: #525252;
+}
+
+/* Chỉnh sửa nội dung abulm */
 .container-album{
     width:auto;
     height:25rem;
     background-color: #000000;
     padding:30px;
     margin-top:-30px;
-    padding-bottom:50px;
+    padding-bottom:550px;
+}
+.center-handler >h3{
+    margin: 20px;
+    font-weight: 700;
+    color: #efefef;
+    font-size: 40px;
+    text-align: center;
+}
+.center-handler >p{
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 17px;
+    margin-bottom: 2rem;
+    color: #c2c2c2;
+    max-width: 970px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .center-handler{
     display: flex;
@@ -180,18 +205,36 @@ h3{
     border: 0;
     border-radius: 20px;
 }
+.center-handler > button:hover{
+    background-color:#525252;
+}
+.owl-nav {
+    display: none;
+}
 
 /* Chỉnh sửa nội dung container-customer */
-.container-customer{
-    background-color: #f3f3f3;
-}
 .grid-container-customer{
-    margin: 108px 200px 0 90px;
-    padding-top: 200px;
+    margin: 50px 150px 0 100px;
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: repeat(3,35%);
 
+}
+.center-handler-customer >h3{
+    color: black;
+    padding-top: 5rem;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+}
+.center-handler-customer >p{
+    margin: 0 auto;
+    font-weight: normal;
+    font-size: 17px;
+    color: #7f7f7f;
+    max-width: 970px;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .chamsoc-item{
     display:flex;
@@ -199,11 +242,14 @@ h3{
     justify-content: center;
     align-items: center;
 }
-
+.chamsoc-item > button:hover{
+    background-color: #525252;
+}
 .container-customer h2 a{
     color:#222222;
     text-align: center;
     text-decoration: none;
+    font-size: 30px;
 }
 
 .chamsoc-item button{
@@ -214,22 +260,19 @@ h3{
     border-radius: 20px;
 }
 
-.chamsoc-item p{
-    color: #525252;
+.chamsoc-item >p{
+    color:#525252;
     text-align:center;
-    font-size: 15px;
+    font-size: 17px;
 }
-.chamsoc-item h2{
-    color: #222222;
-    font-size: 20px;
-}
+
 /* chỉnh sửa nội dung footer */
 .footer{
     margin-top:35px;
 }
 .grid-content{
     display: grid;
-    grid-template-columns: repeat(3, 650px);
+    grid-template-columns: repeat(3, 450px);
     justify-content: center;
     background: #110b0b;
     color: white;
@@ -277,7 +320,7 @@ h3{
     position: relative;
 }
 .email{
-    width: 490px;
+    width: 300px;
     height: 36px;
     border-radius: 10px 0 0 10px;
     border: 0px;
@@ -288,6 +331,40 @@ h3{
     position: absolute;
     border-radius: 0 10px 10px 0;
 }
+ /*RESPONSIVE*/
+ @media screen and (max-width:501px) {
+     .menu{
+         display: none;
+     }
+     .search-box{
+         display: none;
+     }
+     .signin{
+         padding: 27px 20px;
+     }
+     .grid-service{
+         display: grid;
+         grid-template-columns: repeat(2 ,250px);
 
-
+     }
+     .service-detail img{
+         max-width: 100%;
+     }
+     .button{
+         max-width: 7rem;
+         max-height: 1.5rem;
+     }
+     .grid-content{
+         display: grid;
+         grid-template-columns: auto;
+     }
+     .button-primary{
+         position: absolute;
+         right: 8%;
+     }
+     .grid-container-customer{
+        display: grid;
+        grid-template-columns: auto;
+     }
+  }
 

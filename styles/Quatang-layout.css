@@ -1,0 +1,17 @@
+
+    /* Chỉnh sửa nội dung container-customer */
+.container{
+    background-color: white;
+}
+.center > h3{
+    color: black;
+    padding-top: 8rem;
+    margin-left: 20rem;
+}
+.center > p{
+    padding-top: 2rem;
+}
+.img-quatang{
+    padding-left: 50rem;
+    margin-bottom: 5rem;
+}
