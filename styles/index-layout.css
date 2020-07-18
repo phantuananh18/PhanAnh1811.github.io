@@ -46,7 +46,7 @@ a{
 .menu ul li a{
     text-decoration: none;
     color: black;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Grenze Gotisch', sans-serif;
 }
 .menu ul li a:hover{
     text-decoration: underline;
@@ -103,7 +103,7 @@ a{
      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-/* Chỉnh sửa container dịch vụ */
+/* Chỉnh sửa container dịch vụ thêm và vệ sinh */
 .container-service{
     background-color: #000000;
 }
@@ -156,12 +156,12 @@ a{
     padding-top:50px;
 }
 
-.service-detail > a > img {
+.service-detail  img {
     width:250px;
     height:200px;
 }
 
-.service-detail > button:hover{
+.service-detail > a > button:hover{
    background-color: #525252;
 }
 
@@ -214,7 +214,7 @@ a{
 
 /* Chỉnh sửa nội dung container-customer */
 .grid-container-customer{
-    margin: 50px 150px 0 100px;
+    margin: 30px 150px 0 70px;
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: repeat(3,35%);
@@ -222,7 +222,7 @@ a{
 }
 .center-handler-customer >h3{
     color: black;
-    padding-top: 5rem;
+    padding-top: 4rem;
     font-size: 40px;
     text-align: center;
     font-weight: 700;
@@ -242,21 +242,21 @@ a{
     justify-content: center;
     align-items: center;
 }
-.chamsoc-item > button:hover{
-    background-color: #525252;
-}
+
 .container-customer h2 a{
     color:#222222;
     text-align: center;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
 }
-
+.chamsoc-item > button:hover{
+    background-color: #525252;
+}
 .chamsoc-item button{
     width: 15rem;
     height: 2.5rem;
     text-align: center;
-    border: 1px solid #110b0b;
+    border: 2px solid #110b0b;
     border-radius: 20px;
 }
 

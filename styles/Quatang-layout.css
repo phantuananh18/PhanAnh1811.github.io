@@ -7,11 +7,13 @@
     color: black;
     padding-top: 8rem;
     margin-left: 20rem;
+    font-size: 40px;
 }
 .center > p{
     padding-top: 2rem;
 }
 .img-quatang{
     padding-left: 50rem;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
+    margin-top: 0px;
 }

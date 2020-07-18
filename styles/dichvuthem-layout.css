@@ -1,13 +1,11 @@
-.grid-libary-picture >h3{
-    padding-top: 10rem;
+.container-dichvuthem>h3{
+    padding-top: 7.5rem;
     text-align: center;
-    color: black;
     font-size: 40px;
 }
-
 .grid-container-servie{
     display: grid;
-    grid-template-columns: repeat(3,400px);
+    grid-template-columns: repeat(2,400px);
     grid-template-rows: 1;
 }
 .grid-service{
@@ -23,7 +21,14 @@
     padding:20px;
 }
 
-.service-detail > a > img {
-    width:250px;
-    height:200px;
+.service-detail > a > button:hover{
+    background-color: #525252;
+}
+.service-detail button{
+    width: 15rem;
+    height: 2.5rem;
+    text-align: center;
+    margin-top: 25px;
+    border: 2px solid #110b0b;
+    border-radius: 20px;
 }

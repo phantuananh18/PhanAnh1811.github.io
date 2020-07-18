@@ -1,23 +1,23 @@
-/* Chỉnh sửa container trang web khach hang */
-.container-khachhang{
-    padding-top:60px;
+/* Chỉnh sửa container trang chính sách */
+.container-chinhsach{
+    padding-top:50px;
 }
 
-.container-khachhang >h3{
+.container-chinhsach >h3{
     margin-top: 5rem;
     text-align: center;
     color: black;
     font-size: 40px;
 }
 
-.grid-container-khachhang{
+.grid-container-chinhsach{
     display: grid;
-    grid-template-columns: repeat(2,50%);
-    padding-left: 100px;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: 1;
 }
 .service-detail > a > img {
-    width:250px;
-    height:200px;
+    width: auto;
+    height: 250px;
 }
 .service-detail>p{
     color: black;
